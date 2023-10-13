@@ -6,17 +6,20 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {      
+    extend: {   
+      fontFamily: {
+        poppins: ["var(--font-poppins)"],
+      },   
+      colors: {
+        primario: "#232E7E",
+        gris: '#343A40',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-    },
-    colors: {
-      primario: "#232E7E",
-      gris: '#343A40',
-    },
+    },    
   },
   plugins: [],
 };
