@@ -25,7 +25,7 @@ const Navbar = () => {
         <li className='cursor-pointer hover:bg-white hover:text-primario p-2 rounded-md ease-in duration-100'>Inicio</li>
           <li className='cursor-pointer hover:bg-white hover:text-primario p-2 rounded-md ease-in duration-100'>Contacto</li>
           <li className='group cursor-pointer hover:bg-white hover:text-primario p-2 rounded-md ease-in duration-100'>Remates</li>
-          <li className='cursor-pointer hover:bg-white hover:text-primario p-2 rounded-md ease-in duration-100'>Nosotros</li>
+          <Link href={'/nosotros'} className='cursor-pointer hover:bg-white hover:text-primario p-2 rounded-md ease-in duration-100'>Nosotros</Link>
           <li className='cursor-pointer hover:bg-white hover:text-primario p-2 rounded-md ease-in duration-100'>Iniciar Sesión</li>
         </ul>
 
@@ -38,7 +38,7 @@ const Navbar = () => {
             <li className='border-b-2 border-slate-500 w-full text-right pb-1 cursor-pointer'>Inicio</li>
             <li className='border-b-2 border-slate-500 w-full text-right pb-1 cursor-pointer'>Contacto</li>
             <li className='border-b-2 border-slate-500 w-full text-right pb-1 cursor-pointer'>Remates</li>
-            <li className='border-b-2 border-slate-500 w-full text-right pb-1 cursor-pointer'>Nosotros</li>
+            <Link href={'/nosotros'} className='border-b-2 border-slate-500 w-full text-right pb-1 cursor-pointer'>Nosotros</Link>
             <li className='border-b-2 border-slate-500 w-full text-right pb-1 cursor-pointer'>Iniciar Sesión</li>
           </ul>
         </div>
