@@ -78,7 +78,7 @@ const Nosotros = () => {
         </div>
       </div>
 
-      {/* <MyModal title='ERROR' /> */}
+      <MyModal title='ERROR' />
     </div>
   );
 };
