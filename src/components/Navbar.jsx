@@ -5,6 +5,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { RiMenu4Line } from 'react-icons/ri'
 import { CgClose }  from 'react-icons/cg';
+import { navbarLinks } from '@/utils/navbarLinks';
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -22,11 +23,11 @@ const Navbar = () => {
         </Link>        
 
         <ul className='hidden lg:flex items-center gap-6 text-white font-poppins text-lg'>
-          <Link href={'/'} className='cursor-pointer hover:bg-white hover:text-primario p-2 rounded-md ease-in duration-100'>Inicio</Link>
-          <li className='cursor-pointer hover:bg-white hover:text-primario p-2 rounded-md ease-in duration-100'>Contacto</li>
-          <li className='group cursor-pointer hover:bg-white hover:text-primario p-2 rounded-md ease-in duration-100'>Remates</li>
-          <Link href={'/nosotros'} className='cursor-pointer hover:bg-white hover:text-primario p-2 rounded-md ease-in duration-100'>Nosotros</Link>
-          <li className='cursor-pointer hover:bg-white hover:text-primario p-2 rounded-md ease-in duration-100'>Iniciar Sesión</li>
+          {
+            navbarLinks.map( link => (
+              <Link key={link.id} href={link.path} className='cursor-pointer hover:bg-white hover:text-primario p-2 rounded-md ease-in duration-100'>{link.name}</Link>    
+            ))
+          }                    
         </ul>
 
         <div className='lg:hidden cursor-pointer z-20' onClick={handleNavbar}>
