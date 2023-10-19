@@ -36,11 +36,11 @@ const Navbar = () => {
 
         <div className={navbar ? 'z-10 lg:hidden fixed top-0 right-0 w-full md:w-[60%] h-full bg-primario ease-in duration-500' : 'z-10 lg:hidden fixed top-0 right-[-100%] w-full md:w-[70%] h-full bg-primario ease-in duration-500'}>        
           <ul className='mt-28 w-full h-full flex flex-col gap-8 text-white font-poppins text-2xl items-end px-6'>
-            <Link href={'/'} onClick={handleNavbar} className='border-b-2 border-slate-500 w-full text-right pb-1 cursor-pointer'>Inicio</Link>
-            <li onClick={handleNavbar} className='border-b-2 border-slate-500 w-full text-right pb-1 cursor-pointer'>Contacto</li>
-            <li onClick={handleNavbar} className='border-b-2 border-slate-500 w-full text-right pb-1 cursor-pointer'>Remates</li>
-            <Link onClick={handleNavbar} href={'/nosotros'} className='border-b-2 border-slate-500 w-full text-right pb-1 cursor-pointer'>Nosotros</Link>
-            <li onClick={handleNavbar} className='border-b-2 border-slate-500 w-full text-right pb-1 cursor-pointer'>Iniciar Sesión</li>
+            {
+              navbarLinks.map( link => (
+                <Link key={link.id} href={link.path} onClick={handleNavbar} className='border-b-2 border-slate-500 w-full text-right pb-1 cursor-pointer'>{link.name}</Link>    
+              ))
+            }            
           </ul>
         </div>
       </nav>      
