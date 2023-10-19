@@ -2,6 +2,7 @@ import React from "react";
 import { FaLocationArrow, FaCalendarAlt } from 'react-icons/fa'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import { GrMail } from 'react-icons/gr'
+import MyModal from "@/components/MyModal";
 
 const Nosotros = () => {
   return (
@@ -76,6 +77,8 @@ const Nosotros = () => {
           </div>
         </div>
       </div>
+
+      {/* <MyModal title='ERROR' /> */}
     </div>
   );
 };
