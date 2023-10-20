@@ -22,6 +22,6 @@ export const navbarLinks = [
   {
     id: 5,
     name: "Iniciar Sesión",
-    path: "/",
+    path: "/signin",
   },
 ];
