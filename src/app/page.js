@@ -11,7 +11,7 @@ export default function Home() {
     <div className="overflow-x-hidden">
       <Carousel />
 
-      {/* <Remates /> */}
+      <Remates />
 
       <NosEncontramos />  
     </div>

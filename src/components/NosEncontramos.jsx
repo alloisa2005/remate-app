@@ -10,28 +10,31 @@ import Mapa from './Mapa'
 const NosEncontramos = () => {
   return (
     <div className="contenedor mb-4">
-      <h1 className='font-poppins text-xl md:text-2xl text-primario border-b-2 border-primario'>¿Dónde nos encontramos?</h1>        
-      <div className='flex flex-col md:flex-row gap-2 mt-5'>
-        <div className='flex items-center gap-3 mb-3'>
-          <FaLocationArrow size={23} className='text-primario'/>
-          <p className='font-poppins'>Bv. Artigas esq Uruguay</p>
+      <h1 className='titulo'>¿Dónde nos encontramos?</h1>        
+      <div className='mt-5 flex flex-col md:flex-row gap-8 items-center'>        
+        <div className='flex flex-col gap-5 w-full'>
+          <div className='flex items-center gap-3 md:mb-3 border-b border-primario'>
+            <FaLocationArrow size={23} className='mb-2 text-primario'/>
+            <p className='font-poppins mb-2'>Bv. Artigas esq Uruguay <span className='font-bold hidden lg:inline'>(Paysandú - Uruguay)</span></p>            
+          </div>
+          <div className='flex items-center gap-3 md:mb-3 border-b border-primario'>
+            <BsFillTelephoneFill size={23} className=' mb-2 text-primario'/>
+            <p className='font-poppins mb-2'>472 22990</p>
+          </div>
+          <div className='flex items-center gap-3 md:mb-3 border-b border-primario'>
+            <BsWhatsapp size={26} className=' mb-2 text-primario'/>
+            <p className='font-poppins mb-2'>098852722</p>
+          </div>
+          <div className='flex items-center gap-3 md:mb-3 border-b border-primario'>
+            <GrMail size={23} className='mb-2 text-primario'/>
+            <p className='font-poppins mb-2'>imanzinimagli@gmail.com</p>
+          </div>
+          <div className='flex items-center gap-3 md:mb-3 border-b border-primario'>
+            <FaCalendarAlt size={23} className='mb-2 text-primario'/>
+            <p className='font-poppins mb-2'>imanzinimagli@gmail.com</p>
+          </div>
         </div>
-        <div className='flex items-center gap-3 mb-3'>
-          <BsFillTelephoneFill size={23} className='text-primario'/>
-          <p className='font-poppins'>472 22990</p>
-        </div>
-        <div className='flex items-center gap-3 mb-3'>
-          <BsWhatsapp size={26} className='text-primario'/>
-          <p className='font-poppins'>098852722</p>
-        </div>
-        <div className='flex items-center gap-3 mb-3'>
-          <GrMail size={23} className='text-primario'/>
-          <p className='font-poppins'>imanzinimagli@gmail.com</p>
-        </div>
-        <div className='flex items-center gap-3'>
-          <FaCalendarAlt size={23} className='text-primario'/>
-          <p className='font-poppins'>imanzinimagli@gmail.com</p>
-        </div>
+        <Mapa />
       </div>
     </div>
   )

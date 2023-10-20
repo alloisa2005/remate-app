@@ -3,7 +3,7 @@ import React from 'react'
 const Remates = () => {
   return (
     <div className='contenedor'>
-      <h1 className='font-poppins'>Remates</h1>
+      <h1 className='titulo'>Remates</h1>
     </div>
   )
 }
