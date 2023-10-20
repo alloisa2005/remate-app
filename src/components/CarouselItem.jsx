@@ -3,7 +3,7 @@ import React from 'react'
 
 const CarouselItem = ({title, imageSrc}) => {
   return (
-    <div className='w-full h-[450px] relative'>
+    <div className='w-full h-[380px] relative'>
         <Image src={imageSrc} alt='Foto 1' width={1000} height={400} className='w-full h-full object-cover'/>
         <div className='absolute bottom-10 left-0 w-full'>          
           <div className='flex justify-center w-full'>

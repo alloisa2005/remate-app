@@ -9,4 +9,9 @@ export const carouselLinks = [
     title: "Remates en nuestro local",
     imageSrc: "/banner/foto2.jpg",
   },  
+  {
+    id: 3,
+    title: "Remates en nuestro local",
+    imageSrc: "/banner/foto3.jpg",
+  },  
 ];

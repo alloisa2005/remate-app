@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className='bg-primario py-3 text-white text-lg font-poppins flex justify-center items-center gap-3'>      
       <div className='flex items-center gap-2'>
-        <h1>Creado por: aA Soft</h1>
+        <h1>Creado por aallois</h1>
         <BsInstagram size={20} className='text-white cursor-pointer hover:text-red-500 ease-out duration-300'/>
         <BsFacebook size={20} className='text-white cursor-pointer hover:text-blue-500 ease-out duration-300'/>
       </div>
